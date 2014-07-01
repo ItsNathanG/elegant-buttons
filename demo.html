@@ -42,6 +42,44 @@
             margin: 0 0;
             font-family: "Open Sans", sans-serif;
         }
+        @import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:500&text=Fork%20me%20on%20GitHub);
+        body {
+            overflow-x: hidden;
+        }
+        .ribbon {
+            position: absolute;
+            top: 42px;
+            width: 200px;
+            padding: 1px 0;
+            background: #000;
+            color: #eee;
+        }
+        .ribbon.right {
+            right: -42px;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .ribbon a,
+        .ribbon a:visited,
+        .ribbon a:active,
+        .ribbon a:hover {
+            display: block;
+            padding: 1px 0;
+            height: 24px;
+            line-height: 24px;
+            color: inherit;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Cabin Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .ribbon.green {
+            background: #2ecc71;
+        }
     </style>
 </head>
 
@@ -74,6 +112,9 @@
         <a href="#" class="elegant-button-big red">Button</a>
         <a href="#" class="elegant-button-big grey">Button</a>
         <a href="#" class="elegant-button-big dark">Button</a>
+    </div>
+    <div class="ribbon right green">
+        <a href="https://github.com/TheNathanG/elegant-buttons/">Fork me on GitHub</a>
     </div>
 </body>
 

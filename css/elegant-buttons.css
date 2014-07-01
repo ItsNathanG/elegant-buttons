@@ -3,17 +3,23 @@
   text-decoration: none;
   color: #444444;
   font-family: "Open Sans", sans-serif;
-  padding: 5px 10px;
   transition: all 0.2s ease-in-out;
   margin: 15px;
+  padding: 5px 10px;
+}
+.elegant-button:hover {
+  color: #ffffff;
 }
 .elegant-button-big {
   text-decoration: none;
   color: #444444;
   font-family: "Open Sans", sans-serif;
-  padding: 10px 20px;
   transition: all 0.2s ease-in-out;
   margin: 15px;
+  padding: 10px 20px;
+}
+.elegant-button-big:hover {
+  color: #ffffff;
 }
 .green {
   background-color: #ffffff;

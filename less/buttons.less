@@ -26,22 +26,26 @@
 @4: #444;
 @white: #fff;
 
-.elegant-button {
+// button mixin
+.button() {
   text-decoration: none;
   color: @4;
   font-family: "Open Sans", sans-serif;
-  padding: 5px 10px;
   transition: all 0.2s ease-in-out;
   margin: 15px;
+  &:hover {
+    color: @white;
+  }
+}
+
+.elegant-button {
+  .button();
+  padding: 5px 10px;
 }
  
 .elegant-button-big {
-  text-decoration: none;
-  color: @4;
-  font-family: "Open Sans", sans-serif;
+  .button();
   padding: 10px 20px;
-  transition: all 0.2s ease-in-out;
-  margin: 15px;
 }
 
 .outline(@color1, @color2) {
