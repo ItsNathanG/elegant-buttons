@@ -1,0 +1,97 @@
+// out: ../css/elegant-buttons.css, compress: false
+
+// Flat UI Colors variables (http://flatuicolors.com/) 
+@turquoise: #1abc9c;
+@green_sea: #16a085;
+@emerald: #2ecc71;
+@nephritis: #27ae60;
+@peter_river: #3498db;
+@belize_hole: #2980b9;
+@amethyst: #9b59b6;
+@wisteria: #8e44ad;
+@wet_asphalt: #34495e;
+@midnight_blue: #2c3e50;
+@sun_flower: #f1c40f;
+@orange: #f39c12;
+@carrot: #e67e22;
+@pumpkin: #d35400;
+@alizarin: #e74c3c;
+@pomegranate: #c0392b;
+@clouds: #ecf0f1;
+@silver: #bdc3c7;
+@concrete: #95a5a6;
+@asbestos: #7f8c8d;
+
+// Other colors
+@4: #444;
+@white: #fff;
+
+.elegant-button {
+  text-decoration: none;
+  color: @4;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 15px;
+}
+ 
+.elegant-button-big {
+  text-decoration: none;
+  color: @4;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+  margin: 15px;
+}
+
+.outline(@color1, @color2) {
+  background-color: @white;
+  outline: 2px solid @color1;
+  color: @color1;
+  &:hover {
+    color: @white;
+    background-color: @color1;
+    outline: 2px solid @color1;
+  }
+  &:active {
+    background-color: @color2;
+    outline: 5px solid @color2;
+  }
+}
+
+// Different colored buttons
+.green {
+  .outline(@emerald, @nephritis);
+}
+
+.purple {
+  .outline(@amethyst, @wisteria);
+}
+
+.blue {
+  .outline(@peter_river, @belize_hole);
+}
+
+.turquoise {
+  .outline(@turquoise, @green_sea);
+}
+
+.yellow {
+  .outline(@sun_flower, @orange);
+}
+
+.orange {
+  .outline(@carrot, @pumpkin);
+}
+
+.red {
+  .outline(@alizarin, @pomegranate);
+}
+
+.grey {
+  .outline(@concrete, @asbestos);
+}
+
+.dark {
+  .outline(@wet_asphalt, @midnight_blue);
+}
